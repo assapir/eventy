@@ -3,7 +3,7 @@ env
 """)
 
 impl_env = env.Clone()
-src_files = []
+src_files = ['eventy_impl.cpp']
 
 impl = impl_env.SharedLibrary(target='evety', source=src_files)
 Return('impl')

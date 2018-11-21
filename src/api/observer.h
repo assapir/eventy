@@ -12,8 +12,8 @@ class observer
     ~observer();
 
   public:
-    const std::string& get_name() const;
-    void update() const;
+    virtual const std::string& get_name() const = 0;
+    virtual void update() const = 0;
 };
 
 } // namespace eventy
