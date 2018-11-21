@@ -1,4 +1,4 @@
 /bins/**/*
 *.o
 .sconsign.dblite
-bin/Program
+bin/**
