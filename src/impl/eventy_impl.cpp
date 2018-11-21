@@ -18,9 +18,9 @@ void eventy_impl::remove_observer(const string& observer_name)
 
 void eventy_impl::notify() const
 {
-    for (const auto &observer : mObservers)
+    for (const auto& observer : mObservers)
     {
-        observer.second->update();
+        observer.second->invoke();
     }
 }
 

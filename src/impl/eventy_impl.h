@@ -1,10 +1,9 @@
 #ifndef API_EVENTY_IMPL_H_
 #define API_EVENTY_IMPL_H_
 
-#include <functional>
+#include <map>
 #include <memory>
 #include <string>
-#include <map>
 
 #include "api/eventy.h"
 #include "helpers/helpers.h"
@@ -20,7 +19,7 @@ public:
   virtual void notify() const override;
 
 private:
-  std::map<std::string, std::shared_ptr<observer> &, case_insensative_comperator> mObservers;
+  std::map<std::string, std::shared_ptr<observer>, case_insensative_comperator> mObservers;
 };
 
 } // namespace eventy

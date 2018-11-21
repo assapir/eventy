@@ -13,7 +13,7 @@ class observer
 
   public:
     virtual const std::string& get_name() const = 0;
-    virtual void update() const = 0;
+    virtual void invoke() const = 0;
 };
 
 } // namespace eventy

@@ -6,8 +6,6 @@
 namespace eventy
 {
 
-bool are_equal_ignore_case(const std::string &lhs, const std::string &rhs);
-
 class case_insensative_comperator
 {
   public:
