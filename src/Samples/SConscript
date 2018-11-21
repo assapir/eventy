@@ -1,0 +1,7 @@
+Import('env')
+
+program_env = env.Clone()
+src_files = ['program.cpp']
+
+program = program_env.Program(target='Program', source=src_files)
+Return('program')

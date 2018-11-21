@@ -1,0 +1,9 @@
+Import("""
+env 
+""")
+
+impl_env = env.Clone()
+src_files = []
+
+impl = impl_env.SharedLibrary(target='evety', source=src_files)
+Return('impl')
